@@ -1,0 +1,27 @@
+GET http://localhost:3030/newUsers
+
+####
+
+Post http://localhost:3030/newUsers HTTP/1.1
+content-Type: application/json
+
+{  
+        "firstName": "faty",
+        "lastName":"elba",
+        "role": "admin",
+        "password":"sofia22",
+        "userName": "mio22",
+        "email": "sa@gmail.com"
+    }
+
+####
+
+DELETE http://localhost:3030/newUsers/63bd78703d843041742ffe30 HTTP/1.1
+
+####
+PATCH http://localhost:3030/newUsers/63bd78cd3a89c4317be98373 HTTP/1.1
+content-type: application/json
+
+{
+    "email": "sofiab@gmail.com"
+}

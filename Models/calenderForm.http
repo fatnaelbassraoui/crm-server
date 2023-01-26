@@ -1,0 +1,43 @@
+
+GET http://localhost:3030/event
+
+####
+
+Post http://localhost:3030/newEvent HTTP/1.1
+content-Type: application/json
+
+{  
+
+    "title": "Manuela Pucci ",
+    "start": "Wed, 25 Jan 2023 10:27:50 GMT",
+    "end": "Wed, 25 OctJan 2023 18:27:50 GMT",
+    "description": "igiene dentale"
+    
+}
+
+####
+
+
+
+DELETE http://localhost:3030/event/63c99d54d2a2dd660b8b9a01 HTTP/1.1
+
+####
+
+PATCH http://localhost:3030/event/63d0ead70234bbeb2fd14912 HTTP/1.1
+content-type: application/json
+
+{
+    "start": "Wed, 25 Jan 2023 10:27:50 GMT",
+    "end": "Wed, 25 Jan 2023 18:27:50 GMT"
+}
+
+####
+
+POST http://localhost:3030/patientEvent/63b73074e1c29cc76f5a6059 HTTP/1.1
+content-Type: application/json
+
+{  
+    "start": "Wed, 23 Jan 2023 10:27:50 GMT",
+    "end": "Wed, 23 Jan 2023 18:27:50 GMT"
+    
+}
