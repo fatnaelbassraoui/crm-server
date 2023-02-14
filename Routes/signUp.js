@@ -23,7 +23,7 @@ router.get("/newUsers", async (req, res) => {
 //ci permette di leggere il body della req in forma json ed è uguale a express.js
 
 router.post(
-  "/newUsers",
+  "/addNewUsers",
   [
     check("userName", "userName is required")
       .trim()

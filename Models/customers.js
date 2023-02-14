@@ -22,10 +22,6 @@ const customersSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    patientAddress: {
-      type: String,
-      required: true,
-    },
     patientEmail: {
       type: String,
       required: true,

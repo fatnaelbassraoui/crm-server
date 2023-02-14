@@ -18,10 +18,10 @@ const calenderFormSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
-    allDay:{
+    allDay: {
       type: Boolean,
       default: false,
-      required: false
+      required: false,
     },
   },
   {

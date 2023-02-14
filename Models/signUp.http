@@ -2,21 +2,21 @@ GET http://localhost:3030/newUsers
 
 ####
 
-Post http://localhost:3030/newUsers HTTP/1.1
+Post http://localhost:3030/addNewUsers HTTP/1.1
 content-Type: application/json
 
 {  
-        "firstName": "faty",
-        "lastName":"elba",
+        "firstName": "fatna",
+        "lastName":"elbass",
         "role": "admin",
-        "password":"sofia22",
-        "userName": "mio22",
-        "email": "sa@gmail.com"
+        "password":"faty2022",
+        "userName": "faty22",
+        "email": "faty22@gmail.com"
     }
 
 ####
 
-DELETE http://localhost:3030/newUsers/63bd78703d843041742ffe30 HTTP/1.1
+DELETE http://localhost:3030/newUsers/63de7aca494b61e098386dcf HTTP/1.1
 
 ####
 PATCH http://localhost:3030/newUsers/63bd78cd3a89c4317be98373 HTTP/1.1

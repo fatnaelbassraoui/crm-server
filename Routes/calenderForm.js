@@ -1,7 +1,7 @@
 const express = require("express");
 const CalenderForm = require("../Models/calenderForm");
 const Customers = require("../Models/customers");
-const moment = require("moment")
+const moment = require("moment");
 const router = express.Router();
 
 router.get("/event", async (req, res) => {

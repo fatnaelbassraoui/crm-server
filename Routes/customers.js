@@ -3,6 +3,7 @@ const Customers = require("../Models/customers");
 const router = express.Router();
 const { check, validationResult } = require("express-validator");
 
+
 router.get("/customers", async (req, res) => {
   try {
     const registeredCustomers = await Customers.find();
@@ -15,7 +16,7 @@ router.get("/customers", async (req, res) => {
 });
 
 router.post(
-  "/customers",
+  "/newCustomers",
   [
     check("patientFirstName", "patientFirstName is required")
       .trim()
@@ -32,11 +33,13 @@ router.post(
       .withMessage("last must be at least 3 chars long"),
 
     check("patientEmail", "patientEmail is required")
+
       .trim()
       .exists()
       .isEmail()
       .withMessage("invalid email address")
-      .normalizeEmail(),
+      .normalizeEmail()
+
   ],
   async (req, res) => {
     const error = validationResult(req);
@@ -59,14 +62,16 @@ router.post(
         message: "registration successfully",
         payload: saveNewCustomer,
       });
+
     } catch (error) {
-      if (
-        addCustomer.email == addCustomer.email &&
-        addCustomer.patientLastName == addCustomer.patientLastName
-      ) {
+      if (addCustomer.patientEmail === req.body.patientEmail && addCustomer.patientLastName === req.body.patientLastName) {
+        // return res.status(400).send({
+        //   message: "patientLastName/patientEmail already exists",
+        //   payload: error,
         res.status(500).send({
-          message: "userName/E-mail already exists",
+          message: "an error occurred",
           error: error,
+
         });
       }
     }
@@ -101,7 +106,7 @@ router.patch("/customers/:id", async (req, res) => {
       options
     );
     if (!result) return res.status(404).send(`user with id ${id} not found`);
-  } catch (error) {}
+  } catch (error) { }
 });
 
 router.post("/assistedByDoctor/:id", async (req, res) => {

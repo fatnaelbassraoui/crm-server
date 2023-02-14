@@ -25,6 +25,7 @@ router.post("/login", async (req, res) => {
 
   res.header("authorization", token).status(200).send({
     token: token,
+    user: user._id
   });
 });
 

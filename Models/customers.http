@@ -7,12 +7,12 @@ content-Type: application/json
 
 {  
 
-    "patientFirstName": "chiara",
-    "patientLastName": "suffredini",
-    "patientDateOfBirth": "Wed, 21 Oct 2015 18:27:50 GMT",
-    "patientPhoneNumber": "3475696873",
-    "patientAddress": "via romana 10, lucca",
-    "patientEmail":"maria@gmail.com",
+    "patientFirstName": "diego",
+    "patientLastName": "suffre",
+    "patientDateOfBirth": "Wed, 24 Oct 2015 18:27:50 GMT",
+    "patientPhoneNumber": "3rtyui3",
+    "patientAddress": "vias.annunziata, ddfrtgyhlucca",
+    "patientEmail":"gtbfhyju@gmail.com",
     "patientTreatments": "igiene dentale"
     
 }
@@ -23,12 +23,12 @@ DELETE http://localhost:3030/customers/63b73078e1c29cc76f5a605b HTTP/1.1
 
 ####
 
-POST http://localhost:3030/assistedByDoctor/63b73074e1c29cc76f5a6059 HTTP/1.1
+POST http://localhost:3030/assistedByDoctor/63e53deefc4ab34cc6f6ba8c HTTP/1.1
 content-Type: application/json
 
 {  
-        "doctorName":"faty",
-        "doctorLastName":"elba",
-        "doctorId":"639b7c7fca871675b3d3b3ca"
+        "doctorName":"sofy",
+        "doctorLastName":"elbass",
+        "doctorId":"63c9765cfc68ba850db6a10b"
     
 }
