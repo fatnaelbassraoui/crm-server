@@ -6,12 +6,12 @@ Post http://localhost:3030/addNewUsers HTTP/1.1
 content-Type: application/json
 
 {  
-        "firstName": "fatna",
-        "lastName":"elbass",
-        "role": "admin",
-        "password":"faty2022",
-        "userName": "faty22",
-        "email": "faty22@gmail.com"
+        "firstName": "wisal",
+        "lastName":"elbasraoui",
+        "role": "user",
+        "password":"wisal22",
+        "userName": "wisal22",
+        "email": "wisal@gmail.com"
     }
 
 ####

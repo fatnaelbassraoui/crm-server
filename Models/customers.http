@@ -2,17 +2,17 @@ GET http://localhost:3030/customers
 
 ####
 
-Post http://localhost:3030/customers HTTP/1.1
+Post http://localhost:3030/newCustomers HTTP/1.1
 content-Type: application/json
 
 {  
 
-    "patientFirstName": "diego",
-    "patientLastName": "suffre",
+    "patientFirstName": "Msdf",
+    "patientLastName": "sdf",
     "patientDateOfBirth": "Wed, 24 Oct 2015 18:27:50 GMT",
-    "patientPhoneNumber": "3rtyui3",
-    "patientAddress": "vias.annunziata, ddfrtgyhlucca",
-    "patientEmail":"gtbfhyju@gmail.com",
+    "patientPhoneNumber": "23456789",
+    "patientAddress": "vias delle ville 10 lucca",
+    "patientEmail":"maya@gmail.com",
     "patientTreatments": "igiene dentale"
     
 }
@@ -23,12 +23,12 @@ DELETE http://localhost:3030/customers/63b73078e1c29cc76f5a605b HTTP/1.1
 
 ####
 
-POST http://localhost:3030/assistedByDoctor/63e53deefc4ab34cc6f6ba8c HTTP/1.1
+POST http://localhost:3030/assistedByDoctor/63f23c63dabdeab2ac4000b0 HTTP/1.1
 content-Type: application/json
 
 {  
-        "doctorName":"sofy",
-        "doctorLastName":"elbass",
-        "doctorId":"63c9765cfc68ba850db6a10b"
+        "doctorName":"wisal",
+        "doctorLastName":"elbasraoui",
+        "doctorId":"63f23b5cdabdeab2ac4000a6"
     
 }
