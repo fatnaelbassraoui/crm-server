@@ -67,15 +67,11 @@ router.post(
         payload: saveNewUsers, //payload è un nome che si da ai dati. Si può chiamare diversamente
       });
     } catch (error) {
-      if (
-        newUsers.email == newUsers.email &&
-        newUsers.userName == newUsers.userName
-      ) {
-        res.status(500).send({
-          message: "userName/E-mail already exists",
-          error: error,
-        });
-      }
+      return res.status(500).send({
+        message: "userName/E-mail already exists",
+        error: error,
+      });
+
     }
   }
 );

@@ -34,5 +34,14 @@ const SignUpSchema = new mongoose.Schema(
     timestamps: true,
   }
 );
+SignUpSchema.pre("save", async function (next) {  // il pre ci consente di eseguire una funzione prima di eseguire un'altra. In questo caso prima di salvare un nuovo customer, eseguiamo la funzione che ci permette di verificare se esiste già un customer con lo stesso nome e cognome. Se esiste già, non lo salviamo e ritorniamo un errore.
+  const existingUser = await this.constructor.findOne({
+    email: this.email,
+    lastName: this.lastName
+  });
+  if (existingUser) {
+    return next(new Error("User already exists"));
+  }
+});
 
 module.exports = mongoose.model("signUpModel", SignUpSchema, "signUpUsers");

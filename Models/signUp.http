@@ -7,16 +7,16 @@ content-Type: application/json
 
 {  
         "firstName": "wisal",
-        "lastName":"elbasraoui",
+        "lastName":"El ba",
         "role": "user",
         "password":"wisal22",
         "userName": "wisal22",
-        "email": "wisal@gmail.com"
+        "email": "elbassraouifatna@gmail.com"
     }
 
 ####
 
-DELETE http://localhost:3030/newUsers/63de7aca494b61e098386dcf HTTP/1.1
+DELETE http://localhost:3030/newUsers/63f78c56935f6e42edb049fd HTTP/1.1
 
 ####
 PATCH http://localhost:3030/newUsers/63bd78cd3a89c4317be98373 HTTP/1.1
