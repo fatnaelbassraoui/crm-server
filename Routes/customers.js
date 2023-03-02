@@ -52,6 +52,8 @@ router.post(
       patientAddress: req.body.patientAddress,
       patientEmail: req.body.patientEmail,
       patientTreatments: req.body.patientTreatments,
+      patientAvatar: req.body.patientAvatar
+
     });
 
     try {
@@ -109,7 +111,7 @@ router.post("/assistedByDoctor/:id", async (req, res) => {
 
   try {
     const assignDoctor = await Customers.findByIdAndUpdate(
-      id,
+      { _id: id },
       {
         $push: {
           assistedByDoctor: {

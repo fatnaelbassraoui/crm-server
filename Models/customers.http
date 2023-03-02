@@ -7,23 +7,33 @@ content-Type: application/json
 
 {  
 
-    "patientFirstName": "Msdf",
-    "patientLastName": "sdf",
-    "patientDateOfBirth": "Wed, 24 Oct 2015 18:27:50 GMT",
-    "patientPhoneNumber": "23456789",
-    "patientAddress": "vias delle ville 10 lucca",
-    "patientEmail":"maya@gmail.com",
-    "patientTreatments": "igiene dentale"
+    "patientFirstName": "Giovanni",
+    "patientLastName": "Dilorenzo",
+    "patientDateOfBirth": "Wed, 30 Oct 2015 18:27:50 GMT",
+    "patientPhoneNumber": "33456786",
+    "patientAddress": "via di piano 7, lucca",
+    "patientEmail":"giovanniDilo@gmail.com",
+    "patientTreatments": "igiene dentale",
+    "patientAvatar": "https://i.pinimg.com/564x/63/f5/31/63f531e84f6a30df939f06edef46ead1.jpg"
     
 }
 
 ####
 
-DELETE http://localhost:3030/customers/63b73078e1c29cc76f5a605b HTTP/1.1
+DELETE http://localhost:3030/customers/63fb4b49ed2322b1106d0697 HTTP/1.1
+
+####
+PATCH http://localhost:3030/customers/63fe28b4bf30176c7f1636a0 HTTP/1.1
+content-type: application/json
+
+{
+    "patientTreatments": "igiene dentale",
+   "patientAvatar": "https://i.pinimg.com/564x/22/ab/bf/22abbf8a4dde67a4bf1f9e7303279198.jpg"
+}
 
 ####
 
-POST http://localhost:3030/assistedByDoctor/63f23c63dabdeab2ac4000b0 HTTP/1.1
+POST http://localhost:3030/assistedByDoctor/63fe2cb89ce2c8bbcad9a5c9 HTTP/1.1
 content-Type: application/json
 
 {  
@@ -32,3 +42,5 @@ content-Type: application/json
         "doctorId":"63f23b5cdabdeab2ac4000a6"
     
 }
+
+

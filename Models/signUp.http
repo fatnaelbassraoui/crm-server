@@ -6,22 +6,22 @@ Post http://localhost:3030/addNewUsers HTTP/1.1
 content-Type: application/json
 
 {  
-        "firstName": "wisal",
-        "lastName":"El ba",
-        "role": "user",
-        "password":"wisal22",
-        "userName": "wisal22",
-        "email": "elbassraouifatna@gmail.com"
+        "firstName": "fatna",
+        "lastName":"El bassraoui",
+        "role": "admin",
+        "password":"faty22",
+        "userName": "faty22",
+        "email": "fatna@gmail.com"
     }
 
 ####
 
-DELETE http://localhost:3030/newUsers/63f78c56935f6e42edb049fd HTTP/1.1
+DELETE http://localhost:3030/newUsers/63f7acb06bb1a90ecc58fefa HTTP/1.1
 
 ####
-PATCH http://localhost:3030/newUsers/63bd78cd3a89c4317be98373 HTTP/1.1
+PATCH http://localhost:3030/newUsers/63c9765cfc68ba850db6a10b HTTP/1.1
 content-type: application/json
 
 {
-    "email": "sofiab@gmail.com"
+    "lastName": "Baldassarre"
 }

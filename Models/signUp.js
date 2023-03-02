@@ -28,6 +28,12 @@ const SignUpSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
+    avatar: {
+      type: String,
+      required: false,
+      default: 'https://i.pinimg.com/564x/1e/c8/8f/1ec88f15c78ec8cc96175c51202a0416.jpg'
+
+    },
   },
 
   {

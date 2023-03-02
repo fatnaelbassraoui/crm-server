@@ -30,6 +30,12 @@ const customersSchema = new mongoose.Schema(
       type: Array,
       required: false,
     },
+    patientAvatar: {
+      type: String,
+      required: false,
+      default: 'https://i.pinimg.com/564x/1e/c8/8f/1ec88f15c78ec8cc96175c51202a0416.jpg'
+
+    },
     assistedByDoctor: {
       type: Array,
       require: false,
