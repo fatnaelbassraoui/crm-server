@@ -6,12 +6,17 @@ Post http://localhost:3030/addNewUsers HTTP/1.1
 content-Type: application/json
 
 {  
-        "firstName": "fatna",
-        "lastName":"El bassraoui",
+        "firstName": "diego",
+        "lastName":"dacci",
         "role": "admin",
         "password":"faty22",
         "userName": "faty22",
-        "email": "fatna@gmail.com"
+        "email": "dghfca@gmail.com",
+        "dateOfBirth": "1998-12-12",
+        "phoneNumber": "0666666666",
+        "address": "Rue de la paix",
+        "avatar": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin"
+        
     }
 
 ####
@@ -19,9 +24,11 @@ content-Type: application/json
 DELETE http://localhost:3030/newUsers/63f7acb06bb1a90ecc58fefa HTTP/1.1
 
 ####
-PATCH http://localhost:3030/newUsers/63c9765cfc68ba850db6a10b HTTP/1.1
+PATCH http://localhost:3030/newUsers/63fcee6438475eb34784c063 HTTP/1.1
 content-type: application/json
 
 {
-    "lastName": "Baldassarre"
+   
+     "address": "Rue de la paix"
+       
 }

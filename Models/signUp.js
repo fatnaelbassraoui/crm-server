@@ -28,6 +28,18 @@ const SignUpSchema = new mongoose.Schema(
       required: true,
       unique: true,
     },
+    dateOfBirth: {
+      type: Date,
+      required: true,
+    },
+    phoneNumber: {
+      type: String,
+      required: true,
+    },
+    address: {
+      type: String,
+      required: true,
+    },
     avatar: {
       type: String,
       required: false,

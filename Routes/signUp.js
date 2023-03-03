@@ -58,6 +58,9 @@ router.post(
       password: cryptedPassword,
       userName: req.body.userName,
       email: req.body.email,
+      dateOfBirth: req.body.dateOfBirth,
+      phoneNumber: req.body.phoneNumber,
+      address: req.body.address,
       avatar: req.body.avatar,
     });
 
